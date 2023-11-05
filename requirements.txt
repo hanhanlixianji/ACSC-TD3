@@ -1,0 +1,5 @@
+Ubuntu==20.04
+Carla==0.9.13
+gym==0.12.5
+pygame==1.9.6
+scikit-image==0.16.2

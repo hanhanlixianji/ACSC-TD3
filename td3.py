@@ -28,8 +28,8 @@ class Actor(nn.Module):
 		self.maxaction = maxaction
 
 	def forward(self, state):
-		a = torch.tanh(self.l1(state))
-		a = torch.tanh(self.l2(a))
+		a = F.relu(self.l1(state))
+		a = F.relu(self.l2(a))
 		a = torch.tanh(self.l3(a)) * self.maxaction
 		return a
 
